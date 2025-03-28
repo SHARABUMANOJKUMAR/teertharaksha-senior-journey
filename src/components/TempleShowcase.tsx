@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Accessibility, Calendar, Clock, Shield } from 'lucide-react';
@@ -12,7 +13,7 @@ const TempleShowcase = () => {
       id: 1,
       name: "Tirupati Balaji Temple",
       location: "Andhra Pradesh",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tirumala_090615.jpg/1200px-Tirumala_090615.jpg",
+      image: "https://www.cottage9.com/wp-content/uploads/2021/04/IMG_20190203_090729-1024x768.jpg",
       description: "One of the most visited religious sites in the world, dedicated to Lord Venkateswara.",
       features: ["Wheelchair Access", "Medical Center", "Senior Queue"],
       accessibility: 4.5,
