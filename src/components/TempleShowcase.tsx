@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const TempleShowcase = () => {
-  // Sample temple data
+  // Updated temple data with direct image URLs
   const temples = [
     {
       id: 1,
       name: "Tirupati Balaji Temple",
       location: "Andhra Pradesh",
-      image: "/temples/tirupati.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tirumala_090615.jpg/1200px-Tirumala_090615.jpg",
       description: "One of the most visited religious sites in the world, dedicated to Lord Venkateswara.",
       features: ["Wheelchair Access", "Medical Center", "Senior Queue"],
       accessibility: 4.5,
@@ -21,7 +21,7 @@ const TempleShowcase = () => {
       id: 2,
       name: "Varanasi Kashi Vishwanath",
       location: "Uttar Pradesh",
-      image: "/temples/kashi.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/1200px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg",
       description: "Sacred temple on the banks of the Ganges, dedicated to Lord Shiva.",
       features: ["Wheelchair Access", "Rest Areas", "Assisted Darshan"],
       accessibility: 4.0,
@@ -30,7 +30,7 @@ const TempleShowcase = () => {
       id: 3,
       name: "Golden Temple",
       location: "Amritsar, Punjab",
-      image: "/temples/golden.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Golden_Temple_Reflection.jpg/1200px-Golden_Temple_Reflection.jpg",
       description: "The holiest gurdwara and an important pilgrimage site for Sikhs.",
       features: ["Wheelchair Access", "Free Meals", "Senior Facilities"],
       accessibility: 4.8,
@@ -39,7 +39,7 @@ const TempleShowcase = () => {
       id: 4,
       name: "Meenakshi Temple",
       location: "Madurai, Tamil Nadu",
-      image: "/temples/meenakshi.jpg",
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Madurai_Meenakshi_Amman_Temple.jpg/1200px-Madurai_Meenakshi_Amman_Temple.jpg",
       description: "Historic Hindu temple dedicated to Goddess Meenakshi and Lord Sundareswar.",
       features: ["Special Entry", "Rest Areas", "Guide Service"],
       accessibility: 3.9,
