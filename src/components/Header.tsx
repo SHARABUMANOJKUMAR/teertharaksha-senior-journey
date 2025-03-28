@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Bell, Menu, Phone, X, Wheelchair, Coffee, FirstAid, 
+  Bell, Menu, Phone, X, Accessibility, Coffee, Stethoscope, 
   MapPin, MessageSquare, Mic, Calendar, Settings
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";

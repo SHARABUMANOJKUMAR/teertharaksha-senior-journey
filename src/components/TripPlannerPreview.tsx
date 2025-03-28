@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Calendar, Clock, MapPin, BadgeIndianRupee, 
-  Wheelchair, Heart, Coffee, Shield, ArrowRight 
+  Accessibility, Heart, Coffee, Shield, ArrowRight 
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
@@ -80,7 +79,7 @@ const TripPlannerPreview = () => {
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-border pb-4">
                 <div className="flex items-center">
-                  <Wheelchair className="h-6 w-6 text-primary mr-3" />
+                  <Accessibility className="h-6 w-6 text-primary mr-3" />
                   <span className="text-lg">Wheelchair Assistance</span>
                 </div>
                 <div className="flex items-center space-x-2">

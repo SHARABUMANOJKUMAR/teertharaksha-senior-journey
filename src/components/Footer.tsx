@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Heart, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, Instagram, Facebook, Twitter, Accessibility, Stethoscope, Coffee } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -73,11 +73,11 @@ const Footer = () => {
             <h3 className="text-xl font-medium mb-6">Special Services</h3>
             <ul className="space-y-4">
               <li className="flex items-center text-muted-foreground senior-friendly-text">
-                <Wheelchair className="h-5 w-5 mr-2 text-primary" />
+                <Accessibility className="h-5 w-5 mr-2 text-primary" />
                 <span>Wheelchair Assistance</span>
               </li>
               <li className="flex items-center text-muted-foreground senior-friendly-text">
-                <FirstAid className="h-5 w-5 mr-2 text-primary" />
+                <Stethoscope className="h-5 w-5 mr-2 text-primary" />
                 <span>Medical Support</span>
               </li>
               <li className="flex items-center text-muted-foreground senior-friendly-text">

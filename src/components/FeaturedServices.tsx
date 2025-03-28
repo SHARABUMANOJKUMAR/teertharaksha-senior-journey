@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Wheelchair, FirstAid, MapPin, Heart, 
+  Accessibility, Stethoscope, MapPin, Heart, 
   Coffee, Clock, Phone, Shield, Car
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -10,12 +10,12 @@ import { Button } from "@/components/ui/button";
 const FeaturedServices = () => {
   const services = [
     {
-      icon: <Wheelchair className="w-12 h-12 text-primary" />,
+      icon: <Accessibility className="w-12 h-12 text-primary" />,
       title: "Wheelchair Assistance",
       description: "Wheelchair rentals and helpers for smooth movement around temple premises."
     },
     {
-      icon: <FirstAid className="w-12 h-12 text-devotion" />,
+      icon: <Stethoscope className="w-12 h-12 text-devotion" />,
       title: "Medical Support",
       description: "Emergency medical services with on-call doctors for immediate assistance."
     },

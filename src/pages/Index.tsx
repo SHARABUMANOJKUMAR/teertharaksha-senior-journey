@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  MapPin, Wheelchair, Calendar, Phone, 
-  Heart, Shield, Coffee, FirstAid, MessageSquare, 
+  MapPin, Accessibility, Calendar, Phone, 
+  Heart, Shield, Coffee, Stethoscope, MessageSquare, 
   Clock, LocateFixed, Mic, BadgeIndianRupee
 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -58,7 +57,7 @@ const Index = () => {
             <Card className="bg-white sacred-float">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="rounded-full bg-sacred/10 p-4 mb-4">
-                  <Wheelchair className="h-10 w-10 text-sacred" />
+                  <Accessibility className="h-10 w-10 text-sacred" />
                 </div>
                 <h3 className="text-xl font-medium mb-2">Wheelchair Facilities</h3>
                 <p className="text-muted-foreground">
@@ -82,7 +81,7 @@ const Index = () => {
             <Card className="bg-white sacred-float">
               <CardContent className="p-6 flex flex-col items-center text-center">
                 <div className="rounded-full bg-devotion/10 p-4 mb-4">
-                  <FirstAid className="h-10 w-10 text-devotion" />
+                  <Stethoscope className="h-10 w-10 text-devotion" />
                 </div>
                 <h3 className="text-xl font-medium mb-2">Medical Assistance</h3>
                 <p className="text-muted-foreground">

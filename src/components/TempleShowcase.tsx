@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Wheelchair, Calendar, Clock, Shield } from 'lucide-react';
+import { ArrowRight, Accessibility, Calendar, Clock, Shield } from 'lucide-react';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -78,7 +77,7 @@ const TempleShowcase = () => {
                 ></div>
                 <div className="absolute top-3 right-3">
                   <Badge className="bg-blessing text-white">
-                    <Wheelchair className="mr-1 h-3 w-3" /> 
+                    <Accessibility className="mr-1 h-3 w-3" /> 
                     {temple.accessibility.toFixed(1)}/5
                   </Badge>
                 </div>

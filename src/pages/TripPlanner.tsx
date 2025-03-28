@@ -1,15 +1,15 @@
-
 import React, { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { 
-  Calendar, Clock, Wheelchair, Heart, Shield, Coffee, 
-  Plus, Minus, BadgeIndianRupee, ArrowRight, Check 
+  Calendar, Clock, Accessibility, Heart, Shield, Coffee, 
+  Plus, Minus, BadgeIndianRupee, ArrowRight, Check, MapPin, Home
 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Badge } from '@/components/ui/badge';
 import { 
   Card, 
   CardContent,
@@ -107,18 +107,14 @@ const TripPlanner = () => {
   };
   
   const recalculatePrice = () => {
-    // Base price calculation (simplified for demo)
     let basePrice = 5000 * Number(tripData.duration);
     
-    // Multiply by number of travelers
     basePrice *= Number(tripData.travelers);
     
-    // Add services costs
     const servicesCost = 
       (tripData.wheelchair ? 2000 : 0) +
       (tripData.personalGuide ? 3000 * Number(tripData.duration) : 0);
     
-    // Medical assistance
     let medicalCost = 0;
     switch(tripData.medicalAssistance) {
       case "basic":
@@ -132,7 +128,6 @@ const TripPlanner = () => {
         break;
     }
     
-    // Accommodation
     let accommodationFactor = 1;
     switch(tripData.accommodation) {
       case "budget":
@@ -146,10 +141,8 @@ const TripPlanner = () => {
         break;
     }
     
-    // Total calculation with accommodation factor
     const totalPrice = (basePrice + servicesCost + medicalCost) * accommodationFactor;
     
-    // Set price range (min to max)
     setEstimatedPrice({
       min: Math.round(totalPrice * 0.9),
       max: Math.round(totalPrice * 1.1)
@@ -160,7 +153,6 @@ const TripPlanner = () => {
     if (step < 3) {
       setStep(step + 1);
     } else {
-      // Submit form
       toast({
         title: "Trip Plan Created!",
         description: "Your personalized trip plan has been created. A representative will contact you shortly.",
@@ -212,7 +204,6 @@ const TripPlanner = () => {
               Create your senior-friendly temple journey with customized accessibility options
             </p>
             
-            {/* Progress Steps */}
             <div className="flex items-center mb-8">
               <div className={`flex items-center justify-center w-10 h-10 rounded-full ${step >= 1 ? 'bg-primary text-white' : 'bg-muted'}`}>
                 1
@@ -227,7 +218,6 @@ const TripPlanner = () => {
               </div>
             </div>
             
-            {/* Step 1: Basic Trip Details */}
             {step === 1 && (
               <Card className="border shadow">
                 <CardHeader>
@@ -385,7 +375,6 @@ const TripPlanner = () => {
               </Card>
             )}
             
-            {/* Step 2: Accessibility Needs */}
             {step === 2 && (
               <Card className="border shadow">
                 <CardHeader>
@@ -535,7 +524,6 @@ const TripPlanner = () => {
               </Card>
             )}
             
-            {/* Step 3: Review & Submit */}
             {step === 3 && (
               <Card className="border shadow">
                 <CardHeader>
@@ -612,7 +600,7 @@ const TripPlanner = () => {
                         <div className="space-y-4 pl-4">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center space-x-3">
-                              <Wheelchair className="h-5 w-5 text-primary" />
+                              <Accessibility className="h-5 w-5 text-primary" />
                               <span>Wheelchair Assistance</span>
                             </div>
                             <Badge variant={tripData.wheelchair ? "default" : "outline"}>
@@ -731,8 +719,5 @@ const TripPlanner = () => {
     </div>
   );
 };
-
-// Add missing Home icon for the accommodation section
-import { Home } from 'lucide-react';
 
 export default TripPlanner;
