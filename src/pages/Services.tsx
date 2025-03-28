@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { 
   Accessibility, Stethoscope, MapPin, Heart, 
   Coffee, Clock, Phone, Shield, Car, Users, 
