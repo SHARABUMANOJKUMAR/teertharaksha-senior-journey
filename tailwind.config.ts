@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,12 +62,37 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Custom colors for Teertharaksha
+				saffron: {
+					light: '#FFC107',
+					DEFAULT: '#FF9800',
+					dark: '#F57C00'  
+				},
+				devotion: {
+					light: '#FF7043',
+					DEFAULT: '#E64A19',
+					dark: '#BF360C'
+				},
+				sacred: {
+					light: '#81D4FA',
+					DEFAULT: '#03A9F4',
+					dark: '#0288D1'
+				},
+				blessing: {
+					light: '#A5D6A7',
+					DEFAULT: '#4CAF50',
+					dark: '#2E7D32'
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				'poppins': ['Poppins', 'sans-serif'],
+				'yatra': ['"Yatra One"', 'cursive']
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +110,29 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { boxShadow: '0 0 10px 2px rgba(255, 152, 0, 0.2)' },
+					'50%': { boxShadow: '0 0 20px 5px rgba(255, 152, 0, 0.5)' }
+				},
+				'temple-bob': {
+					'0%': { transform: 'translateY(0px) rotate(0deg)' },
+					'25%': { transform: 'translateY(-5px) rotate(1deg)' },
+					'50%': { transform: 'translateY(0px) rotate(0deg)' },
+					'75%': { transform: 'translateY(5px) rotate(-1deg)' },
+					'100%': { transform: 'translateY(0px) rotate(0deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 4s ease-in-out infinite',
+				'glow': 'glow 3s ease-in-out infinite',
+				'temple-bob': 'temple-bob 6s ease-in-out infinite'
 			}
 		}
 	},
