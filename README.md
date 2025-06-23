@@ -66,7 +66,7 @@ TEERTHARAKSHA serves as a **digital bridge between ancient traditions and modern
 
 **S. Manoj Kumar**  
 AI Developer | Temple Tourism Tech Innovator  
-GitHub: [@SHARABUMANOJKUMAR](https://github.com/SHARABUMANOJKUMAR/teertharaksha-senior-journey/)
+GitHub: [@SHARABUMANOJKUMAR](https://github.com/SHARABUMANOJKUMAR/teertharaksha-senior-journey)
 
 ---
 
