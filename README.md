@@ -1,69 +1,85 @@
-# Welcome to your Lovable project
+# 🛕 TEERTHARAKSHA – Senior Journey Travelling
 
-## Project info
+**Developed by S. Manoj Kumar**
 
-**URL**: https://lovable.dev/projects/31c9b193-e475-4061-a645-1a123d237192
+**TEERTHARAKSHA** is a senior-centric travel assistant designed to help elderly individuals and spiritual seekers effortlessly plan safe, meaningful, and culturally enriching temple trips across India. Focused on **comfort, tradition, and accessibility**, the application acts as a voice-enabled trip planner and intelligent companion for senior pilgrims.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Project Overview
 
-**Use Lovable**
+TEERTHARAKSHA was inspired by the need to make **pilgrimage planning easier for senior citizens** who often face challenges with accessibility, language, and digital tools. This system provides personalized temple trip recommendations, travel planning, safety tips, and regional language support — all integrated into a user-friendly digital assistant.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/31c9b193-e475-4061-a645-1a123d237192) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🧠 Key Features
 
-**Use your preferred IDE**
+- 🗺️ **Temple Planning**: Suggests famous temples across various states with timing, location, and pooja details.
+- 👵 **Senior-Focused Guidance**: Includes elderly-friendly tips like wheelchair access, nearby hospitals, and safe timings.
+- 🗣️ **Multilingual Interaction**: Supports native Indian languages like Hindi, Tamil, and Kannada.
+- 🧾 **PDF Itinerary Generation**: Allows users to download detailed trip plans as shareable PDFs.
+- 📲 **WhatsApp Sharing & UPI Donations**: Exports the plan for family sharing and includes options for digital donations.
+- 📍 **Google Maps Integration**: Shows temple routes, directions, and estimated travel time.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔧 Built With
 
-Follow these steps:
+- **Python** – Core logic and backend integration
+- **Streamlit** – Interactive user interface with clear visuals and buttons
+- **OpenAI GPT / Whisper** – For natural language understanding and voice support
+- **FPDF & QRCode** – Document and QR generation for offline sharing
+- **Google Maps API** – Temple location embeds
+- **WhatsApp & Calendar Links** – Share trip plans across platforms
+- **Firebase / pyodbc** – For backend storage and analytics
+- **Lottie Animations** – To enhance the visual experience
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🌐 Live Demo (If Applicable)
 
-# Step 3: Install the necessary dependencies.
-npm i
+> Coming Soon or deployed via Streamlit / Lovable
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🧪 Use Case Example
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+**"Plan a 3-day senior-friendly temple trip to Kanchipuram and Tirupati."**
 
-**Use GitHub Codespaces**
+- Recommends temples with darshan hours and rituals
+- Adds medical info like nearest hospital, weather updates
+- Generates full itinerary with travel time
+- Exports plan as a PDF and WhatsApp message for family sharing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🧘 Purpose
 
-This project is built with .
+TEERTHARAKSHA serves as a **digital bridge between ancient traditions and modern AI tools** — empowering senior citizens and their families to reconnect with their spiritual roots through personalized, accessible journeys.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/31c9b193-e475-4061-a645-1a123d237192) and click on Share -> Publish.
+---
 
-## I want to use a custom domain - is that possible?
+## 👨‍💻 Developed By
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+**S. Manoj Kumar**  
+AI Developer | Temple Tourism Tech Innovator  
+GitHub: [@SHARABUMANOJKUMAR](https://github.com/SHARABUMANOJKUMAR/teertharaksha-senior-journey/)
+
+---
+
+## 📄 License
+
+This project is open-source under the MIT License. Feel free to fork, use, or contribute.
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to:
+- OpenAI for GPT & Whisper APIs
+- Streamlit and Firebase for rapid development
+- Indian temple tourism data sources and elders who inspired this mission
+
